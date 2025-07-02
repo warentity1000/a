@@ -2,15 +2,15 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Radio Live</title>
+  <title>Radio Ritmo de Verão</title>
 </head>
 <body>
-  <h1 style="text-align:center;">🎧 Radio Musik 24/7</h1>
-  <p style="text-align:center;">Musik diputar otomatis dan berulang selamanya</p>
+  <h1 style="text-align:center;">🎧 Ritmo de Verão</h1>
+  <p style="text-align:center;">Musik diputar otomatis & tanpa henti</p>
 
-  <audio id="player" loop autoplay style="display: none;">
+  <audio id="player" loop autoplay style="display:none">
     <source src="musik.mp3" type="audio/mpeg">
-    Browser tidak mendukung audio.
+    Browser tidak mendukung pemutar audio.
   </audio>
 
   <script>
@@ -18,13 +18,13 @@
       const audio = document.getElementById('player');
       const tryPlay = () => {
         audio.play().then(() => {
-          console.log('Audio diputar otomatis 🎵');
+          console.log('Audio diputar otomatis');
         }).catch(err => {
-          console.warn('Autoplay gagal, menunggu interaksi user 🙃', err);
+          console.warn('Autoplay gagal:', err);
           const enableAudio = () => {
             audio.play();
             document.removeEventListener('click', enableAudio);
-            console.log('Audio diputar setelah klik ✅');
+            console.log('Audio diputar setelah klik');
           };
           document.addEventListener('click', enableAudio);
         });
