@@ -2,14 +2,26 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Radio Live Loop</title>
+  <title>Radio Musik Live</title>
 </head>
 <body>
-  <h1>🎵 Radio Live Musik</h1>
-  <p>Memutar musik selama 1 jam secara terus-menerus</p>
+  <h1 style="text-align: center;">🎵 Radio Musik 24/7</h1>
+  <p style="text-align: center;">Musik diputar otomatis & terus-menerus</p>
 
-  <audio autoplay loop style="display: none">
-  <source src="musik.mp3" type="audio/mpeg">
-</audio>
+  <!-- Audio disembunyikan, auto-play & loop -->
+  <audio autoplay loop style="display: none;">
+    <source src="musik.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio player.
+  </audio>
+
+  <script>
+    // Cegah audio mati di beberapa browser
+    window.addEventListener('DOMContentLoaded', () => {
+      const audio = document.querySelector('audio');
+      audio.play().catch((e) => {
+        console.log('Autoplay ditolak oleh browser:', e);
+      });
+    });
+  </script>
 </body>
 </html>
