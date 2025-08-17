@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Ain 💌</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #4a1c40;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: rgba(255,255,255,0.92);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #d63384;
+      animation: fadeInDown 2s ease;
+    }
+    .typing {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1.2s ease;
+    }
+    .typing.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    #btnReply {
+      margin-top: 25px;
+      padding: 12px 22px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background: #d63384;
+      color: #fff;
+      cursor: pointer;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.6s ease;
+    }
+    #btnReply.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+    /* animasi hati */
+    .heart {
+      position: absolute;
+      color: rgba(255, 0, 90, 0.3);
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+      pointer-events: none;
+      z-index: 1;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+    /* Form balasan */
+    #replyBox {
+      margin-top: 30px;
+      display: none;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+      font-size: 1rem;
+      resize: none;
+    }
+    button#sendReply {
+      margin-top: 12px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      background: #b3005e;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #savedReply {
+      margin-top: 20px;
+      background: #ffe6f0;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: left;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Untuk Ain 💌</h1>
+    <div id="content">
+      <p class="typing">Ain, aku menulis ini dengan sepenuh hati, karena aku sudah terlalu lama menyimpan semua ini sendiri. Aku tidak ingin lagi membiarkan perasaanku hanya diam di dalam hati tanpa pernah kau tahu. Ada begitu banyak hal yang ingin aku katakan, dan semoga lewat tulisan ini, kau bisa merasakan sedikit dari apa yang aku rasakan.</p>
+      <p class="typing">Sejak pertama kali aku mengenalmu, ada sesuatu yang berbeda. Kamu bukan hanya hadir sebagai seseorang yang biasa lewat dalam hidupku. Kamu hadir seperti cahaya yang datang tanpa diminta, tapi justru membuat segalanya terasa lebih terang. Senyummu, tawamu, bahkan cara sederhana kamu berbicara mampu membuat hatiku bergetar dengan cara yang sulit aku jelaskan.</p>
+      <p class="typing">Aku sering mencoba bersikap biasa, berpura-pura tenang ketika berada di dekatmu. Tapi jujur, Ain, setiap detik yang aku habiskan bersamamu adalah momen yang membuatku semakin sadar bahwa aku benar-benar menyukaimu. Kadang aku tersenyum sendiri hanya karena teringat hal-hal kecil tentangmu. Sesuatu yang mungkin bagimu sepele, tapi bagiku itu begitu berharga.</p>
+      <p class="typing">Hari-hariku berubah sejak mengenalmu. Hal-hal yang dulunya terasa berat, kini terasa lebih ringan hanya dengan mengingatmu. Aku menemukan diriku menjadi lebih bersemangat, lebih ingin berusaha, seolah keberadaanmu menjadi alasan sederhana tapi kuat bagiku untuk terus melangkah maju.</p>
+      <p class="typing">Aku tahu, aku bukanlah orang yang sempurna. Aku punya banyak kekurangan, banyak hal yang mungkin membuatku tidak layak berada di sampingmu. Tapi justru karena itulah aku ingin jujur hari ini. Aku tidak ingin menyembunyikan lagi bahwa kamu adalah orang yang sangat istimewa bagiku.</p>
+      <p class="typing">Aku tidak tahu bagaimana reaksimu setelah membaca ini. Aku tidak berani berharap terlalu banyak, tapi aku berharap setidaknya kamu tahu bahwa ada seseorang yang benar-benar peduli, yang selalu mengingatmu dalam doa, yang ingin melihatmu bahagia dengan cara apa pun.</p>
+      <p class="typing">Ain, aku menulis ini bukan untuk membuatmu tertekan atau merasa terbebani. Aku hanya ingin menyampaikan apa yang selama ini aku pendam. Aku ingin jujur, meskipun aku tahu risiko dari kejujuran ini. Karena bagiku, perasaan ini terlalu berharga untuk terus disimpan tanpa pernah kau tahu.</p>
+      <p class="typing">Kalau aku boleh jujur lagi, aku membayangkan masa depan di mana aku bisa berjalan bersamamu, berbicara banyak hal, berbagi cerita sederhana, dan menertawakan hal-hal kecil bersama. Mungkin itu terdengar berlebihan, tapi begitulah aku memandangmu. Kamu adalah seseorang yang begitu aku hargai.</p>
+      <p class="typing">Dan pada akhirnya, semua ini bermuara pada satu hal sederhana. Ain, aku suka sama kamu. Dari hati yang paling dalam, aku benar-benar menyukaimu, dengan segala yang ada pada dirimu. Perasaan ini tulus, dan aku menuliskannya dengan harapan agar suatu saat nanti, kamu bisa mengerti betapa berharganya dirimu bagiku.</p>
+      <p class="typing">Terima kasih sudah membaca sampai akhir. Apapun jawabanmu nanti, aku akan menerimanya dengan lapang dada. Yang terpenting bagiku adalah kau tahu bahwa ada seseorang yang tulus menyayangimu. Itulah aku, Ain, dan inilah perasaan yang sebenarnya ingin aku sampaikan sejak lama. ❤️</p>
+    </div>
+    <button id="btnReply">Balas pesanku 💌</button>
+    
+    <div id="replyBox">
+      <h3>Tulis balasanmu di sini ✨</h3>
+      <textarea id="replyText" placeholder="Ketik jawabanmu di sini..."></textarea><br>
+      <button id="sendReply">Kirim</button>
+    </div>
+
+    <div id="savedReply">
+      <h3>Balasanmu tersimpan 💖</h3>
+      <p id="replyOutput"></p>
+    </div>
+  </div>
+
+  <script>
+    // animasi hati random
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+    setInterval(createHeart, 500);
+
+    // tampilkan teks satu per satu
+    const paragraphs = document.querySelectorAll(".typing");
+    let delay = 1000;
+    paragraphs.forEach((p, i) => {
+      setTimeout(() => {
+        p.classList.add("show");
+        if (i === paragraphs.length - 1) {
+          setTimeout(() => {
+            document.getElementById("btnReply").classList.add("show");
+          }, 1500);
+        }
+      }, delay);
+      delay += 3000;
+    });
+
+    // tombol reply
+    document.getElementById("btnReply").onclick = () => {
+      document.getElementById("replyBox").style.display = "block";
+    };
+
+    // kirim balasan
+    document.getElementById("sendReply").onclick = () => {
+      const reply = document.getElementById("replyText").value.trim();
+      if (reply) {
+        localStorage.setItem("replyToAin", reply);
+        document.getElementById("replyOutput").innerText = reply;
+        document.getElementById("savedReply").style.display = "block";
+        document.getElementById("replyBox").style.display = "none";
+      } else {
+        alert("Tulis dulu balasanmu Ain 💕");
+      }
+    };
+
+    // load balasan tersimpan
+    const saved = localStorage.getItem("replyToAin");
+    if (saved) {
+      document.getElementById("replyOutput").innerText = saved;
+      document.getElementById("savedReply").style.display = "block";
+    }
+  </script>
+</body>
+</html>
