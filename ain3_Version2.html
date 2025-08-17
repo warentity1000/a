@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Ain 💌</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #4a1c40;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 850px;
+      width: 96%;
+      margin: auto;
+      background: rgba(255,255,255,0.92);
+      padding: 24px 8px 32px 8px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      text-align: center;
+      margin-top: 30px;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      margin-bottom: 16px;
+      color: #d63384;
+      font-size: 2rem;
+      animation: fadeInDown 2s ease;
+      word-break: break-word;
+    }
+    .typing {
+      font-size: 1.08rem;
+      line-height: 1.7;
+      text-align: justify;
+      margin-bottom: 16px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1.2s ease;
+      word-break: break-word;
+    }
+    .typing.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    #btnReply {
+      margin-top: 18px;
+      padding: 12px 22px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background: #d63384;
+      color: #fff;
+      cursor: pointer;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.6s ease;
+      width: 100%;
+      max-width: 320px;
+      box-sizing: border-box;
+    }
+    #btnReply.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+    /* animasi hati */
+    .heart {
+      position: absolute;
+      color: rgba(255, 0, 90, 0.3);
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+      pointer-events: none;
+      z-index: 1;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+    /* Form balasan */
+    #replyBox {
+      margin-top: 24px;
+      display: none;
+    }
+    #replyBox h3 {
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+    }
+    textarea {
+      width: 100%;
+      min-height: 90px;
+      max-height: 220px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+      font-size: 1rem;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+    button#sendReply {
+      margin-top: 10px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      background: #b3005e;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+      max-width: 220px;
+      box-sizing: border-box;
+    }
+    #savedReply {
+      margin-top: 18px;
+      background: #ffe6f0;
+      padding: 12px;
+      border-radius: 10px;
+      text-align: left;
+      display: none;
+      word-break: break-word;
+      font-size: 1rem;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 14px 2vw 20px 2vw;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: 1.35rem;
+      }
+      .typing {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      #btnReply {
+        padding: 11px 0;
+        font-size: 0.98rem;
+        max-width: 100vw;
+      }
+      #replyBox h3 {
+        font-size: 1rem;
+      }
+      #savedReply {
+        font-size: 0.97rem;
+      }
+      textarea {
+        min-height: 70px;
+        max-height: 170px;
+        font-size: 0.97rem;
+      }
+      button#sendReply {
+        padding: 8px 0;
+        font-size: 0.97rem;
+        max-width: 100vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Untuk Ain 💌</h1>
+    <div id="content">
+      <p class="typing">Ain, aku menulis ini dengan sepenuh hati, karena aku sudah terlalu lama menyimpan semua ini sendiri. Aku tidak ingin lagi membiarkan perasaanku hanya diam di dalam hati tanpa pernah kamu tahu.</p>
+      <p class="typing">Sejak pertama kali aku mengenalmu, ada sesuatu yang berbeda. Kamu bukan hanya hadir sebagai seseorang yang biasa lewat dalam hidupku. Kamu hadir seperti cahaya yang datang tanpa aku sangka.</p>
+      <p class="typing">Aku sering mencoba bersikap biasa, berpura-pura tenang ketika berada di dekatmu. Tapi jujur, Ain, setiap detik yang aku habiskan bersamamu adalah momen yang membuatku semakin sulit untuk berpura-pura.</p>
+      <p class="typing">Hari-hariku berubah sejak mengenalmu. Hal-hal yang dulunya terasa berat, kini terasa lebih ringan hanya dengan mengingatmu. Aku menemukan diriku menjadi lebih bersemangat, lebih berwarna.</p>
+      <p class="typing">Aku tahu, aku bukanlah orang yang sempurna. Aku punya banyak kekurangan, banyak hal yang mungkin membuatku tidak layak berada di sampingmu. Tapi justru karena itulah aku ingin terus belajar menjadi lebih baik.</p>
+      <p class="typing">Aku tidak tahu bagaimana reaksimu setelah membaca ini. Aku tidak berani berharap terlalu banyak, tapi aku berharap setidaknya kamu tahu bahwa ada seseorang yang benar-benar peduli sama kamu.</p>
+      <p class="typing">Ain, aku menulis ini bukan untuk membuatmu tertekan atau merasa terbebani. Aku hanya ingin menyampaikan apa yang selama ini aku pendam. Aku ingin jujur, meskipun aku tahu risikonya.</p>
+      <p class="typing">Kalau aku boleh jujur lagi, aku membayangkan masa depan di mana aku bisa berjalan bersamamu, berbicara banyak hal, berbagi cerita sederhana, dan menertawakan hal-hal kecil bersama.</p>
+      <p class="typing">Dan pada akhirnya, semua ini bermuara pada satu hal sederhana. Ain, aku suka sama kamu. Dari hati yang paling dalam, aku benar-benar menyukaimu, dengan segala yang ada pada dirimu.</p>
+      <p class="typing">Terima kasih sudah membaca sampai akhir. Apapun jawabanmu nanti, aku akan menerimanya dengan lapang dada. Yang terpenting bagiku adalah kau tahu bahwa ada seseorang yang tulus menyimpan rasa untukmu.</p>
+    </div>
+    <button id="btnReply">Balas pesanku 💌</button>
+
+    <div id="replyBox">
+      <h3>Tulis balasanmu di sini ✨</h3>
+      <textarea id="replyText" placeholder="Ketik jawabanmu di sini..."></textarea><br>
+      <button id="sendReply">Kirim</button>
+    </div>
+
+    <div id="savedReply">
+      <h3>Balasanmu tersimpan 💖</h3>
+      <p id="replyOutput"></p>
+    </div>
+  </div>
+
+  <script>
+    // animasi hati random
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+    setInterval(createHeart, 500);
+
+    // tampilkan teks satu per satu
+    const paragraphs = document.querySelectorAll(".typing");
+    let delay = 1000;
+    paragraphs.forEach((p, i) => {
+      setTimeout(() => {
+        p.classList.add("show");
+        if (i === paragraphs.length - 1) {
+          setTimeout(() => {
+            document.getElementById("btnReply").classList.add("show");
+          }, 1500);
+        }
+      }, delay);
+      delay += 3000;
+    });
+
+    // tombol reply
+    document.getElementById("btnReply").onclick = () => {
+      document.getElementById("replyBox").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("replyText").focus();
+      }, 170);
+    };
+
+    // kirim balasan
+    document.getElementById("sendReply").onclick = () => {
+      const reply = document.getElementById("replyText").value.trim();
+      if (reply) {
+        localStorage.setItem("replyToAin", reply);
+        document.getElementById("replyOutput").innerText = reply;
+        document.getElementById("savedReply").style.display = "block";
+        document.getElementById("replyBox").style.display = "none";
+      } else {
+        alert("Tulis dulu balasanmu Ain 💕");
+      }
+    };
+
+    // load balasan tersimpan
+    const saved = localStorage.getItem("replyToAin");
+    if (saved) {
+      document.getElementById("replyOutput").innerText = saved;
+      document.getElementById("savedReply").style.display = "block";
+    }
+  </script>
+</body>
+</html>
