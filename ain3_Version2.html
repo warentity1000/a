@@ -182,6 +182,7 @@
       <p class="typing">Kalau aku boleh jujur lagi, aku membayangkan masa depan di mana aku bisa berjalan bersamamu, berbicara banyak hal, berbagi cerita sederhana, dan menertawakan hal-hal kecil bersama.</p>
       <p class="typing">Dan pada akhirnya, semua ini bermuara pada satu hal sederhana. Ain, aku suka sama kamu. Dari hati yang paling dalam, aku benar-benar menyukaimu, dengan segala yang ada pada dirimu.</p>
       <p class="typing">Terima kasih sudah membaca sampai akhir. Apapun jawabanmu nanti, aku akan menerimanya dengan lapang dada. Yang terpenting bagiku adalah kau tahu bahwa ada seseorang yang tulus menyimpan rasa untukmu.</p>
+      <p style="font-family: cursive, sans-serif; font-style: italic;"> ~ By A.S </p>
     </div>
     <button id="btnReply">Balas pesanku 💌</button>
 
@@ -215,7 +216,7 @@
 
     // tampilkan teks satu per satu
     const paragraphs = document.querySelectorAll(".typing");
-    let delay = 1000;
+    let delay = 3000;
     paragraphs.forEach((p, i) => {
       setTimeout(() => {
         p.classList.add("show");
@@ -245,7 +246,7 @@
         document.getElementById("savedReply").style.display = "block";
         document.getElementById("replyBox").style.display = "none";
       } else {
-        alert("Tulis dulu balasanmu Ain 💕");
+        alert("tulis sesuatu a.s. gabakal tau. Ain 💕");
       }
     };
 
